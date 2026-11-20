@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+subjects = ["Math", "Science", "English"]
+
+marks = [85, 80, 75]
+
+plt.figure(figsize=(7, 7))
+
+plt.pie(
+    marks,
+    labels=subjects,
+    autopct="%1.1f%%",
+    startangle=90,
+    colors=["skyblue", "lightgreen", "orange"],
+    explode=(0.1, 0, 0)
+)
+
+plt.title("Student Marks Distribution")
+
+plt.show()
